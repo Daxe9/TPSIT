@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>"CRICETI DIEM"</h1>
+            <p>** LASCIA UNA RECENSIONE **</p>
+        </div>
+        <a href="/index.html" class="recensione" id="indietro"
+            >TORNA INDIETRO</a
+        >
+        <div>
+            <form id="form">
+                <h1 id="subtitle">
+                    Conoscere il tuo parere è importante per noi!
+                </h1>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" maxlength="20" required />
+
+                <label for="cognome">Cognome:</label>
+                <input type="text" name="cognome" maxlength="20" required />
+
+                <label for="data">Data: </label>
+                <input type="date" min="2020-01-01" name="data" />
+
+                <label for="valutazione">Valutazione: </label>
+                <div>
+                    <input type="radio" name="valutazione" />
+                    <label for="1">1</label>
+                    <input type="radio" name="valutazione" />
+                    <label for="2">2</label>
+                    <input type="radio" name="valutazione" />
+                    <label for="3">3</label>
+                    <input type="radio" name="valutazione" />
+                    <label for="4">4</label>
+                    <input type="radio" name="valutazione" required checked />
+                    <label for="5">5</label>
+                </div>
+
+                <input type="submit" value="Submit" />
+
+                <input type="reset" value="reset" />
+            </form>
+            <script>
+                document
+                    .getElementById("form")
+                    .addEventListener("submit", () => {
+                        alert(`Recensione Registrata\n`);
+                    });
+            </script>
+        </div>
+    </body>
+</html>
